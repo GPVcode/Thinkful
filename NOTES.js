@@ -36,3 +36,7 @@ if (random === 1) {
 } else {
   console.log("The random number was not 1,2, or six. Unlucky.");
 }
+
+
+//Below is code for conditional situation to find out whether a User has anything in their online cart and how to interact with user base on the the activity in their cart.
+let itemsInCart =
