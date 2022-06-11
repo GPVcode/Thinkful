@@ -16,3 +16,12 @@ concatenation -
   What is a method? 
 
 Although there are various ways to ype code such as the case with strings, consistency in code is most important. Just stick to double quotes until single quotes is necessary.
+
+date: 6/11/2022
+Control Flow: The main idea of control flow aka "flow of execution" is that it conditionally determins which set of instructions runs.
+  -Conditional Statements: Perform different tasks based off certain information.
+  -order of operations: collection of rules that govern the order at which operators are evaluated.
+  -Truthy values: Values that an if statement will treat as true.
+  -Falsy Values: values that an if statement will treat as false.
+  -Logical operators: Operators that test whether a given conditions is met.
+  -Comparison operators: Math symbols that compare two values
