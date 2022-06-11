@@ -32,3 +32,21 @@ console.log(z);
 
 // This tests your code - you can ignore it for now!
 require('./test.js');(void 0);
+
+
+
+// NEW SECTION ON CONDITIONALS
+// A random number from 1 to 6
+let random = Math.ceil(Math.random() * 6); //random number generator from 1-6(integers only - like dice) Math.random by default are all float numbers from 0-1. Multiply by 6 to scale the options. Use Math.ceil to round up and receive integers from 1-6.
+
+// Try changing the equality checks below
+// See the results by clicking 'run'
+if (random === 1) {
+  console.log("The random number was 1");
+} else if (random === 2) {
+  console.log("The random number was 2");
+} else if (random === 6) {
+  console.log("The random number was 6");
+} else {
+  console.log("The random number was not 1,2, or six. Unlucky.");
+}
