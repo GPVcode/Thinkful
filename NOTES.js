@@ -39,4 +39,20 @@ if (random === 1) {
 
 
 //Below is code for conditional situation to find out whether a User has anything in their online cart and how to interact with user base on the the activity in their cart.
-let itemsInCart =
+let itemsInCart = 2;
+
+if (!itemsInCart) {
+  console.log("Your cart is empty.");
+} else {
+  console.log("You have at least 1 item in your cart.");
+}
+
+let item1 = 25;
+let item2 = 30;
+
+if{item1 !== item2) {
+  console.log("They are different.");
+} else {
+  console.log("They are the same!");
+}
+   
