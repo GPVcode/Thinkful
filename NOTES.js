@@ -7,8 +7,7 @@
 //Method -
  //A function that is attached to an object as one of the object's attributes
 
-
-//Although there are various ways to ype code such as the case with strings, consistency in code is most important. Just stick to double quotes until single quotes is necessary.
+//NOTE: Although there are various ways to type code such as the case with strings, consistency in code is most important. Just stick to double quotes until single quotes is necessary.
 
 //date: 6/11/2022
 //Control Flow: The main idea of control flow aka "flow of execution" is that it conditionally determins which set of instructions runs.
@@ -18,8 +17,6 @@
   //-Falsy Values: values that an if statement will treat as false.
   //-Logical operators: Operators that test whether a given conditions is met.
   //-Comparison operators: Math symbols that compare two values
-
-
 
 // NEW SECTION ON CONDITIONALS
 // A random number from 1 to 6
@@ -55,4 +52,21 @@ if{item1 !== item2) {
 } else {
   console.log("They are the same!");
 }
+  
+   
+// Truthy and Falsy Values:
+   // false; | "" | 0 | null | undefined | Nan; all evaluate to false  when used in an if statement
+   // && returns the first falsy value, of the last value if no values are falsy
+   // || returns the first truthy value, or the last value if no values are truthy
+   // does 7 == "7"; coerce the "7" into an integer?
+   
+// pseudo code:
+   // 1. If timeOfDay is before noon (12), print "good morning!".
+   // 2. Otherwise, print "good night!".
+   
+ 
+//Collecting Data with Arrays
+   //Each location in an array is an index. You can sort through this index that starts with the first elemnt of the array at 0
+   
+   
    
