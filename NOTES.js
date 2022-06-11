@@ -1,37 +1,23 @@
-// For each of the examples, what will be logged?
-// Enter your guesses before you hit run!
+//date: 6/10/2022
+//I've decided to use this page to write my JS notes. So far it's been review and filling out small holes I had - which is great! From here on out, I am using this page for notes.
 
-// One
-// Does addition work?
-let x = 21 + 3;
-// enter your guess where the '0' is on the next line
-let guessOne = 24;
-console.log(x);
-
-// Two
-// What will happen when there is more than one operator?
-let y = 2 * 2 + 1;
-// Enter your guess on the next line, where the '0' is
-let guessTwo = 5;
-console.log(y);
-
-// Three
-// What does it mean to add words together?
-let z = "We use repls for " + "drills, playgrounds, and prediction.";
-// Enter your guess inside the "" below
-// Be careful! The text has to match exactly.
-let guessThree = "We use repls for drills, playgrounds, and prediction.";
-console.log(z);
+//Key Terms:
+//concatenation - 
+  //The process of joiining different values or pieces of text together.
+//Method -
+ //A function that is attached to an object as one of the object's attributes
 
 
-// if you need to see the solution:
-// https://replit.com/@thinkful/What-will-be-logged-solution
+//Although there are various ways to ype code such as the case with strings, consistency in code is most important. Just stick to double quotes until single quotes is necessary.
 
-
-
-
-// This tests your code - you can ignore it for now!
-require('./test.js');(void 0);
+//date: 6/11/2022
+//Control Flow: The main idea of control flow aka "flow of execution" is that it conditionally determins which set of instructions runs.
+  //-Conditional Statements: Perform different tasks based off certain information.
+  //-order of operations: collection of rules that govern the order at which operators are evaluated.
+  //-Truthy values: Values that an if statement will treat as true.
+  //-Falsy Values: values that an if statement will treat as false.
+  //-Logical operators: Operators that test whether a given conditions is met.
+  //-Comparison operators: Math symbols that compare two values
 
 
 
