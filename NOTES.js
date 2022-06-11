@@ -67,6 +67,6 @@ if{item1 !== item2) {
  
 //Collecting Data with Arrays
    //Each location in an array is an index. You can sort through this index that starts with the first elemnt of the array at 0
-   
-   
+   // You can put arrays within arrays
+   // While strings are immutable -- or not changeable, array methods, in contrary, will mutate -- or change an array.
    
