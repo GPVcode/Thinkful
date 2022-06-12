@@ -85,7 +85,7 @@
      for (let index = 1; index <= numberOfGuest; index++) { //start at index 1, check if conditional expression is true, and if so, print that index number. Once the computer gets to the end parenthesis, index increments by the set increment(1). The new number runs by conditional expression, and if true, gets printed as such below.
        console.log("Here is a burger for guest #:" + index); // This print is more interactive. We preset string sentance that goes with any number our concatenated index variable returns.
      }
-              //random not on increment: incrementing by 1 is the most common practice
+              //random note on increment: incrementing by 1 is the most common practice
      // for loops practice:
      let myFriends = ["Jenny", "Noor", "Alicia", "Samira", "Katie"];
      
