@@ -85,6 +85,43 @@
      for (let index = 1; index <= numberOfGuest; index++) { //start at index 1, check if conditional expression is true, and if so, print that index number. Once the computer gets to the end parenthesis, index increments by the set increment(1). The new number runs by conditional expression, and if true, gets printed as such below.
        console.log("Here is a burger for guest #:" + index); // This print is more interactive. We preset string sentance that goes with any number our concatenated index variable returns.
      }
+              //random not on increment: incrementing by 1 is the most common practice
+     // for loops practice:
+     let myFriends = ["Jenny", "Noor", "Alicia", "Samira", "Katie"];
+     
+     for (let i = 0; i < myFriends.length; i++) {
+       
+       console.log(myFriends[i].toUpperCase() + " likes to party!"); //Return names in Uppercase
+     }
+     
+     // for loops practice:
+     // Update array to make every index value uppercased
+     let myFriends = ["Jenny", "Noor", "Alicia", "Samira", "Katie"];
+     
+     for (let i = 0; i < myFriends.length; i++) {     
+     upperFriends = myFriends[i].toUpperCase();
+     }
+     console.log(myFriends);
+     
+     // for loops drills:
+     // Write a for loop that logs the numbers up to 10
+     for (let i = 1; i <= 10; i++) {
+       console.log(i);
+     }
+     // Write a for loop that logs the numbers from 5 to 10
+     for(let i = 5; i <= 10; i++){
+       console.log(i);
+     }
+     // Write a for loop that logs the numbers from 0 to 100, counting by 10s
+     for (let i = 0; i <= 100; i+=10){
+       console.log(i);
+     }
+
+
+     
+     
+     
+     
    
    
    
