@@ -116,6 +116,16 @@
      for (let i = 0; i <= 100; i+=10){
        console.log(i);
      }
+     
+     // Loops example
+     
+     let totals = [10,20,30,40]; // Four index numbers with their rexpective index values
+    for(let i=0; i < totals.length; i++){ // for loops starting at index0 until condtion is false with an increment of 1
+    let weightedTotal = totals[i]*2; // assign "totals" index number * 2 into weightedTotal.
+    if(weightedTotal < 75){ // if weightedTotal is less than the value 75... print weightedTotal
+      console.log(weightedTotal) //WeightedTotal should be printed until index 3 because the value  in index 3 is 40; 40 times 2 is 80, which is greater than 75.
+    }
+  }
 
 
      
