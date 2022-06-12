@@ -79,9 +79,12 @@
      }
      
      console.log("This is the end of our loop!"); // conditional expression is no longer true, so the for loop stopped and moved on to this code.
-   
-   
-   
+     
+     //for loops exanmple 2:
+     let numberOfGuests = 20; 
+     for (let index = 1; index <= numberOfGuest; index++) { //start at index 1, check if conditional expression is true, and if so, print that index number. Once the computer gets to the end parenthesis, index increments by the set increment(1). The new number runs by conditional expression, and if true, gets printed as such below.
+       console.log("Here is a burger for guest #:" + index); // This print is more interactive. We preset string sentance that goes with any number our concatenated index variable returns.
+     }
    
    
    
