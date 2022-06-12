@@ -147,6 +147,22 @@
         // example:
      gifts.lisa; // "coloring book"
      gifts.beth; // "suit of armor"
+     //Objects and dot notation example
+     const students = [ //object called students
+       { name: 'William Bates', timezone: 'Central' },
+       { name: 'Jakob Solis', timezone: 'Pacific' },
+       { name: 'Danni Cook', timezone: 'Mountains' },
+       { name: 'Talen Cook', timezone: 'Mountains' },
+       { name: 'Li Yang', timezone: 'Eastern' },
+       { name: 'Faith Clark', timezone: 'Eastern' },
+       { name: 'Sajid Rehal', timezone: 'Pacific' },
+       { name: 'Alicia Lee', timezone: 'Eastern' },
+     ];
+     
+     console.log(students[2].timezone) // print values in index 2 and retrieve value in key "timezone". Mountains is retrieved.
+       
+        
+  
      
      
      
