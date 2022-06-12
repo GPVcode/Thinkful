@@ -69,8 +69,8 @@
    
 // Iterating through collections:
    // The power of loops is the ability to cycle through arrays.
-   // The variable "i" usually stands for "incrementor".
-// The for loop: requires three expressions -- initial expression, conditional expression, and increment expression **VERY IMPORTANT**
+   // The variable "i" usually stands for "incrementor". **Just read another piece that says i stands for index** (MUST FIND TRUTH) **UDPATE**It seems like index is the right answer. **New thought** What if I was the one reading the documents incorrectly and that in the particular section I was reading, they were referring to the third expression in a for loop(i++)In other words, they were referring to the i in i++ as the incrementor. The i's in initial and conditional expression are then referred to as index values.
+// The for loop: requires three expressions -- initial expression, conditional expression, and increment operater expression **VERY IMPORTANT**
      //for loops example
      console.log("Begin loop!");
      
