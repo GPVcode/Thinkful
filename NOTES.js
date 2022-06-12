@@ -129,10 +129,24 @@
 
 //**NEW SECTION**
      
-// Objects: 
+// Objects: Main idea - Objects allow you to keep track what value belong to each key.  Then, you can easily retrieve a value using the name of the key in which the value is assigned to.
      // What is an object? - An object is a type of collection that holds values using key-value pairs
-     
-     
+     // what is a key-value pair? example:
+     let disctionary = { hola: "hello", suave: "soft", taco: "taco" }
+     //note on objects and key-value pairs: this idea is similar to giving out gifts from a huge pile of gifts based on the name on the gift's tag.
+     // Example of a JavaScript object:
+     let gifts == { // use gifts as the variable for this object. Our subject object contains many values as such below
+       tommy: "stuffed giraffe", //tommy is an example of keys AKA properties. "stuffed giraffe" is an example of values
+       lisa: "coloring book",    // thus, we have key-value pairs within this object assigned into variable "gifts"
+       roberto: "baseball cap",
+       beth: "suit of armor",
+     };
+     gifts["tommy"]; //this outputs "stuffed giraffe"
+     //Objects note: 
+        // regarding dot notation: once values are defined, you can call on the key to retrieve the value inside:
+        // example:
+     gifts.lisa; // "coloring book"
+     gifts.beth; // "suit of armor"
      
      
      
