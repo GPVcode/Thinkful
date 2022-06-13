@@ -161,4 +161,30 @@
        zipcode: "10001"
      }
 // PSEUDO CODING
-     
+     //Main idea: Pseudo coding allows you to focus on one part of the entire code at a time.
+     // Create an object
+     let cart = [
+  {
+    itemName: "Walnut Guitar Mount",
+    price: 62.0,
+  },
+  {
+    itemName: "Wooden Guitar Pick Box",
+    price: 8.5,
+  },
+  {
+    itemName: "Mahogany Guitar Stand",
+    price: 149.99,
+  },
+];
+
+let subtotal = 0;
+let shipping = 12.99;
+let total = 0;
+
+// create a loop to run through the data within our object called "cart"
+for (let i = 0; i < cart.length; i++) {
+   let price = cart[i].price; // create a variable price to assign price relative to index number
+   subtotal += price; // add price to holder named subtotal
+}
+total = subtotal + shipping; // Create a variable called Total to assign the subtotal accumulated by the loop plus previously set shipping price
