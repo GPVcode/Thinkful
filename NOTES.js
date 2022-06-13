@@ -206,7 +206,7 @@
       for (let i = 0; i < colors.length; i++) { //for loops
         // What could you write here? ANSWER NOTE: I'll be using for loops to make the output use "& " on the condition that the value in the index number is blue.
            if (colors[i] === "blue"){ 
-             statement += "& " + colors[i] +".";
+             statement += "& " + colors[i] + ".";
            }
            else {
            statement += colors[i] + ", "; // Unless the index value is blue, simply ad a comma and space to make output gramatically proper.
@@ -223,7 +223,7 @@
 
      
      
-     
+   
      
    
    
