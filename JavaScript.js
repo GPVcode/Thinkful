@@ -101,14 +101,13 @@
        console.log(i);
      }
      // Write a for loop that logs the numbers from 5 to 10
-     for(let i = 5; i <= 10; i++){
+     for(let i = 5; i < 10; i++){
        console.log(i);
      }
      // Write a for loop that logs the numbers from 0 to 100, counting by 10s
-     for (let i = 0; i <= 100; i+=10){
+     for (let i = 0; i < 100; i+=10){
        console.log(i);
      }
-
 
       // example:
      gifts.lisa; // "coloring book"
@@ -126,3 +125,39 @@
      ];
 
      console.log(students[2].timezone) // print values in index 2 and retrieve value in key "timezone". Mountains is retrieved.
+     
+     // Objects can be inside of arrays. When things are inside of things in javascript, that's called nesting.
+     // Nesting: Nested object, nested arrays. "Things inside of things". 
+     // Nested Object: is an object that is the property of another object!
+     // Example: In the example below, the key "programs" is nested under university. Further, "science" is nested under programs.
+     let university = {
+        name: "State University",
+       programs: {
+          "science": {
+           credits: 100,
+            enrollment: 2000,
+            dean: "Juanita Doe"
+          },
+          "computer science": {
+            credits: 120,
+            enrollment: 2400,
+            dean: "Sofia Patel"
+          }
+        }
+      }
+     // Here's how you access the data types in these complex objects
+     university.programs."science".enrollment //output 2000
+     // EXAMPLE:
+     var person = {
+      name: "Daphne",
+      age: 25,
+      profession: "developer"
+    }
+
+    //Add a property to person called address. It should be an object with three of it's own properties: street, city, and zipcode with values '221B Baker St.' 'New York City' and '10001' respectively.
+      person.address = {
+       street: "221B Baker St.",
+       city: "New York City",
+       zipcode: "10001"
+     }
+     
