@@ -195,11 +195,32 @@
        city: "New York City",
        zipcode: "10001"
      }
-          
-  
-     
-     
-     
+
+// Accumulator Pattern
+     // What is an accumulator pattern? An accumulator pattern is a method of building up for accumulating data. A chucnk of code used to accumulate data such as "open now" restaurants.
+     // Exercise
+     // An example of the accumulator pattern
+      let colors = ["red", "white", "blue"];
+      let statement = "My favorite colors are "; // This is the accumulator 
+
+      for (let i = 0; i < colors.length; i++) { //for loops
+        // What could you write here? ANSWER NOTE: I'll be using for loops to make the output use "& " on the condition that the value in the index number is blue.
+           if (colors[i] === "blue"){ 
+             statement += "& " + colors[i] +".";
+           }
+           else {
+           statement += colors[i] + ", "; // Unless the index value is blue, simply ad a comma and space to make output gramatically proper.
+           }
+      }
+
+      // Challenge 1: Make the statement say the following:
+      // 'My favorite colors are red, white, blue,'
+
+      // Challenge 2: Make the statement say the following:
+      // 'My favorite colors are red, white and blue.'
+
+      console.log(statement);
+
      
      
      
