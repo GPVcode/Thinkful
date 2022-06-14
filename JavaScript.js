@@ -188,3 +188,10 @@ for (let i = 0; i < cart.length; i++) {
    subtotal += price; // add price to holder named subtotal
 }
 total = subtotal + shipping; // Create a variable called Total to assign the subtotal accumulated by the loop plus previously set shipping price
+
+// New Lesson on Functions!
+     // This is how we will learn functions! First, we will see how functions can be used to let us reuse code that we've written. Next, we will see how they can break problems down into smaller pieces.
+     
+     
+     
+     
