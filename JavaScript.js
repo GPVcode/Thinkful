@@ -191,7 +191,23 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
 
 // New Lesson on Functions!
      // This is how we will learn functions! First, we will see how functions can be used to let us reuse code that we've written. Next, we will see how they can break problems down into smaller pieces.
-     
-     
+     // Example:
+     function makeCookies (ingredients) { //makeCookies is the function declaration; ingredients is the input
+       return finishedProduct // finishedProduct is the output
+     }
+     // Example 2:
+     function bakeCake() { //bakeCake is the function declaration. Note the parenthesis and curly braces.
+       console.log('Getting ingredients...');
+       console.log('Mixing ingredients...');
+       console.log('Putting in the oven...');
+       console.log('Cake is complete!');
+     }
+     // functions wrap up code and give it a name so that you can use it in other places.
+     // functions are the building blocks of programs -- you make big programs by composing functions and arranging them together.
+     // functions can do the following: REUSE CODE; TRANSFORM INPUTS INTO OUTPUTS; SOLVE PIECES OF A PROBLEM.
+     // running a function is also called invoking a function
+     // functions don't just make a program simpler -- they also make code more maintainable and reusable. Much easier to type two functions with 4 console.logs than to type 8 console logs. lol
+     // you can also update a function and update different parts of your program using the same function.
+     //function turns input to output
      
      
