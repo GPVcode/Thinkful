@@ -225,5 +225,28 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
      leftAndRight("A dog", "A cat"); // Here we call the function with two arguments. Guess our output!
      //IMPORTANT NOTE!: Functions can only ever return 1 value. Any returnm after the first one doesn't run. If we don't specify the value, we get back undefined
      // Using return allows you to write reusable code
+     //WRITING FUNCTIONS:
+        // When you use funstions like parseInt() and toUpperCase(), these funtions return values. They don't log the calue to the console.
      
+     // Example: 
+      let studentAnswers = ['C', 'D', 'B']
+      let teachersAnswers = ['C', 'A', 'B']
+      // gradeQuiz(studentAnswers, teachersAnswers) //=> 2
+
+      // Write your function 'gradeQuiz' here: YOOO I GOT THIS RIGHT I'M SO PROUD OF MYSELF!
+
+      function gradeQuiz(studentAnswers, teachersAnswers) {
+        let score = 0;
+        for (i = 0; i < studentAnswers.length; i++){
+
+          if (studentAnswers[i] === teachersAnswers[i]){
+            score += 1;
+          }
+          else {
+            score += 0;
+          }
+        }
+        return score;
+      }
+
      
