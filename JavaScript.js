@@ -210,4 +210,19 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
      // you can also update a function and update different parts of your program using the same function.
      //function turns input to output
      
+     // Example 3:
+     function greetFriend(name) { // Note: name is the parameter of greetFriend
+       console.log("Hello, " + name);
+     }
+     greetFriend("Kiesha"); // Kiesha is the argument to greetFriend.
+     // Our output will look like: "Hello, Kiesha"
+     
+     // Example 4: 
+     function leftAndRight(left, right) { //you can set more than one parameter
+       console.log(left + " is on the left");
+       console.log(right + " is on the right");
+     }
+     leftAndRight("A dog", "A cat"); // Here we call the function with two arguments. Guess our output!
+     //IMPORTANT NOTE!: Functions can only ever return 1 value. If we don't specify the value, we get back undefined
+     
      
