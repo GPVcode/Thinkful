@@ -223,6 +223,7 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
        console.log(right + " is on the right");
      }
      leftAndRight("A dog", "A cat"); // Here we call the function with two arguments. Guess our output!
-     //IMPORTANT NOTE!: Functions can only ever return 1 value. If we don't specify the value, we get back undefined
+     //IMPORTANT NOTE!: Functions can only ever return 1 value. Any returnm after the first one doesn't run. If we don't specify the value, we get back undefined
+     // Using return allows you to write reusable code
      
      
