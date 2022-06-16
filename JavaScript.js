@@ -264,7 +264,7 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
 countdown(3);
 
      // Note: each time that you call a function, it creates a NEW SCOPE!
-     // Note: 
+     // Note: I'm sleepy. Let's sleep now.
      
      
      
