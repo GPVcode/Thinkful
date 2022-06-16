@@ -249,4 +249,16 @@ total = subtotal + shipping; // Create a variable called Total to assign the sub
         return score;
       }
 
-     
+// FUNCTIONS AND SCOPE
+  // example:
+     // Write your function 'countdown' here
+        // write a function named countdown with the count as the parameter
+        function countdown(count){
+          //use for loop to retrieve a count down effect
+          for (let i = count; i > 0; i--){ //since the input is the start of the loop, let i = count(input). Decrement of 1 until condtion is false
+             console.log(i);
+             }
+          console.log("Blast off!"); //once the countdown is done, log text that says blast off!
+          }
+
+countdown(3);
