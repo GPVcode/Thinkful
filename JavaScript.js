@@ -266,7 +266,17 @@ countdown(3);
      // Note: each time that you call a function, it creates a NEW SCOPE!
      // Note: I'm sleepy. Let's sleep now.
      
+ //BREAKING DOWNPROBLEMS WITH FUNCTIONS
+     //Now we will use pseudocode to break a problem down into smaller pieces. I will see how to solve the pieces using helper functions.
+     //To get familiar with a dataset, start by writing less complex functions for exploration, thus allowing you to become familiarized with the dat set.
      
+     // Example of pseudocode:
+      function countThePeople(people) {
+        // Start a counter variable at 0
+        // Loop through the people
+        // For each person, add 1 to the counter
+        // After the loop, return the counter
+      }
      
      
      
