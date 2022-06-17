@@ -273,12 +273,35 @@ countdown(3);
      // Example of pseudocode:
       function countThePeople(people) {
         // Start a counter variable at 0
+        let counter = 0;
+        for(i = 0; i < people.length; i++){
         // Loop through the people
         // For each person, add 1 to the counter
+          counter += 1;
+        }
         // After the loop, return the counter
+        return counter;
       }
      
+     // Example:
+        // Write your function 'findPeopleByCity' called with an array of people and a city, it should return an array of people whose city matches
+        function findPeopleByCity(people, cityToMatch) { // Use multiple parameters to help identify if the city people are in match our filter parameter(cityToMatch
+          // declare and initalize filtered person array
+          let results = []; // this will be our accumulator which will store the keys that are found to be conditionally true.
+          // loop through the collection of people
+          for(let i = 0; i < people.length; i++) { // start at index 0 and loop through entire array with increment of 1
+            if(people[i].city === cityToMatch) { // if the city value in subject index position matches our filter parameter, push the subject index into our array accumulator.
+              results.push(people[i]); // use push to add to the end of existing array that is our accumulator!
+            }
+          }
+           return results; //make sure to return in the correct scope!
+        }
+
+     // Next we work on how to make our code more resilient to instances where there is no matching city.
      
+     //Best Practice: Small Functions
+      //we will practice using helper functions to split functions into pieces to make it easier to understand and reuse. You can call a function inside another function. Use this inner function -- the helper function -- to split up the work between functions.
+      // Journal Entry - okay this is pretty hard. Currently leasrning about helper funtioncs and I am struggling. It doesnt help that I know I'll be having a busy weekend. I will try to take my time with this as I would like to understand this well. I will get frustrated but I will learn to push through this odd feeling. It doesn;'t feel good, but this body does not know me! I can push through the frustation feeling and learn this elusive concept! I GOT THIS! I CAN DO THIS! I WILL UNDERSTAND HELPER FUNCTIONS AND BETTER MY FEEL FOR JAVASCRIPT!!!!
      
       
        
