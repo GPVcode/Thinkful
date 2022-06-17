@@ -302,6 +302,41 @@ countdown(3);
      //Best Practice: Small Functions
       //we will practice using helper functions to split functions into pieces to make it easier to understand and reuse. You can call a function inside another function. Use this inner function -- the helper function -- to split up the work between functions.
       // Journal Entry - okay this is pretty hard. Currently leasrning about helper funtioncs and I am struggling. It doesnt help that I know I'll be having a busy weekend. I will try to take my time with this as I would like to understand this well. I will get frustrated but I will learn to push through this odd feeling. It doesn;'t feel good, but this body does not know me! I can push through the frustation feeling and learn this elusive concept! I GOT THIS! I CAN DO THIS! I WILL UNDERSTAND HELPER FUNCTIONS AND BETTER MY FEEL FOR JAVASCRIPT!!!!
-     
-      
+      // Helper Functions Example:
+      function findPerson(people, nameToMatch){ // set up helper function with parameter people and nameToMatch
+        for(let i = 0; i < people.length; i++) // Run looop through data of people objects
+          let person = people[i]; // assign values of people in specific index value i to variable person
+          if (people.name === nameToMatch){
+          return person; // not that return is inside the scope of conditional here.
+          }
+      }
+      // Now we proceed to the second helper function
+       function addLike(person, topic) { // this is the second helper function
+         let likes = person["likes"] // assign value in person varabiable
+         likes.push(topic) // add topic to likes index
+       }
+      // Now we use helper functions to write our main addLikeToPerson function
+       function addLikeToPerson(people, nameToMatch, topic){ // this function pushes likes variable into objects when names match
+         let person = findPerson(people, nameToMatch); // this function finds the match
+         addLike(person, topic); // this function assigns value to the person found
+        // essentially, this is a great way to organize your code - especially when you are working with larger code. Helper function is a way to make code easier to work with.
+      //Another Example:
+         // here we findt he number of people whose like values conatin a certain topic. We'll use a loop within a loop.
+         function countLikesByTopic(people, topic){ //this is the function named countLikesByTopic with parameter people and topic
+           let counter = 0; // set counter to 0
+           for(i = 0; i < people.length; i++){ // loop through our information given conditions with 1 increment
+             for(j = 0; j < people[i].likes.length; j++){ // this is the loop within our loop. use j instead of i so that j and i do not collide
+               if(people[i].likes[j] === topic){ // if the value in the likes key within the person object equals the value in topic
+                 counter += 1; // Add to counter if condition is true or counter ++
+               }
+             }
+           }
+              return counter; // return the number we've accumulated. Note that it is important our return statement is in the proper score so that it can identify our counter
+         }
+       
+       
+       
+       
+       
+       
        
