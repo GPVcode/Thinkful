@@ -441,9 +441,53 @@ global.handleInput = handleInput;
               return counter; // return the number we've accumulated. Note that it is important our return statement is in the proper score so that it can identify our counter
          }
        
-
-       
-     
+      
+         // I need to understand learn help functions! Here is the solution for the assessment I just took
+         // Example:
+         // Tasks for this example:
+            // 1) Count the number of people in our data
+                function countThePeople(people) {
+                  counter = 0; // Use accumulator to keep count
+                  for(i = 0; i < people.length; i++){ // for loops to run through each index
+                    counter++; //could also use counter+=1;
+            // 2) For a given person, get their city
+                 function getCity(person){
+                   return person.city; // use dot operators to retrieve value from person object and city key.
+                 }
+            // 3) Find all of the people from a particular city
+                  function findPeopleByCity(people, cityToMatch){
+                    filteredPerson = []; // this is our accumulator
+                    for(i = 0; i < people.length; i++){ // loop through all people
+                      if(people[i].city === cityToMatch){ // if the city stored inside subject index equals to second parameter
+                        filteredPerson.push(people[i])); // push the subject index into accumulator
+                      }
+                    }                 
+                    return filteredPerson; // Return filtered person who fit conditional critera. Make sure return is located in correct scope!
+                  }
+                    
+            // 4) Add a new like to a person (when you get more data)
+                    function addLikeToPerson(people, nameToMatch, topic){ // function with 3 parameters
+                      for(i = 0; i < people.length; i++){ // loop through
+                        if(people[i].name === nameToMatch){ // if current person's name matches value in nameToMatch conditional
+                          people[i].likes.push(topic); //push the value in topic into current person's likes key at the end.
+                          return people[i]; // Why are we returning within the if function? 
+                        }
+                      }                   
+                    }
+            // 5) Count the number of people who like a specified topic
+                    function countLikesByTopic(people, topic) { // let's find the number of people who liked a specific topic!
+                      counter = 0; // use variable counter as our accumulator to keep count 
+                      for(i = 0; i < people.length; i++){ // loop through all the people
+                        for(j = 0; j < people[i].likes.length; j++){ // loop through collection of likes for that specific person
+                        if(people[i].likes[j] === topic){ // if that person's likes equal the topic of parameter 2
+                          counter++; // please increment our accumulator nameted counter
+                          }
+                        }
+                      }
+                      return counter; // give us back our answer
+                    }
+        
+        
        
        
        
