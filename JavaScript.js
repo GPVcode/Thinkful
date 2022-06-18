@@ -486,6 +486,21 @@ global.handleInput = handleInput;
                       }
                       return counter; // give us back our answer
                     }
+                    
+             // Assessment example that took a while but ultimately got!
+                function countByView(campgrounds, viewType){ // write a function taking in two paramenters
+                    let oceanView = 0; // create an accumulator for one type of view
+                    let forestView = 0; // create an accumulator for another type of view
+                    for (let i = 0; i < campgrounds.length; i++){ //loop through the entir dataset
+                      if(campgrounds[i].view === viewType){ // conditional to check if the value found in current index's 'view' key equals the second parameter input
+                        oceanView++; // if view: "ocean" and equals viewType, add 1 to our first accumulator called oceanView
+                        forestView++;//If view: "forest" and equals viewType, add 1 to our second accumulator calles forestView 
+                      }
+                    }
+                  // Return our accumulated variables to find the answer
+                  return oceanView; 
+                  return forestView;
+                }
         
         
        
