@@ -525,6 +525,30 @@ global.handleInput = handleInput;
                       }
                       return false; // after for loop has identify truthys, return all other outputs false
                     }
+                  
+               // another example: return the amount we should order
+                    //create a function called candyOrderQuantity
+                    function candyOrderQuantity(inventory, candyInput){
+                      //set up accumulator named amountToBut to store our output in and later return
+                      let amountToBuy = 0;
+                      // for loop
+                      for (let i=0; i<inventory.length; i++){
+                        // conditional to find candy
+                        if(inventory[i].candy === candyInput){
+                          //conditional to find stock info
+                          if(inventory[i].inStock < inventory[i].weeklyAverage){
+                            // store weekly average times 2 into variable for cleaner code
+                            order = inventory[i].weeklyAverage * 2; 
+                            //add order to accumulator
+                            amountToBuy += order;
+                          }
+                        }
+                      }
+                      //return our answer
+                      return amountToBuy
+                    }
+                      
+                      
         
        
        
