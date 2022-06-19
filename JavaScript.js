@@ -501,7 +501,30 @@ global.handleInput = handleInput;
                   return oceanView; 
                   return forestView;
                 }
-        
+                    
+             // Campsites that are available to reserve
+                    function availableCampsites(campgrounds, number){
+                      let available = [];
+                      for(let i = 0; i < campgrounds.length; i++){
+                        if(campgrounds[i].isReserved === false){
+                          available.push(number);
+                        }
+                      }
+                      return available;
+}
+              
+                    
+              //another example:
+                    function shouldWeOrderThisCandy(inventory, candyInput){ // create function name called "shouldWeOrderThisCandy" using inventory as parametr1 and candyInput as parameter 2
+                      for i=0; i<inventory.length; i++{ // loop through inventory
+                        if(inventory[i].candy === candyInput){ // find key values that match nameInput
+                          if(inventory[i].inStock < inventory[i].weeklyAverage){ // if within an if to see inStock's relationship to weeklyaverage
+                            return true;
+                          }
+                        }
+                      }
+                      return false; // after for loop has identify truthys, return all other outputs false
+                    }
         
        
        
