@@ -547,8 +547,19 @@ global.handleInput = handleInput;
                       //return our answer
                       return amountToBuy
                     }
-                      
-                      
+                // another example: return an object to show how much of each candy to order
+                    function allCandyOrders(inventory){ //create function with inventory array as parameter
+                      let result = {}; //counter
+                      for (let i=0; i<inventory.length; i++){ //loop through array
+                        if (inventory[i].inStock < inventory[i].weeklyAverage) { // if inStock < weeklyAverage order weeklyAverage*2
+                          result[inventory[i].candy] = inventory[i].weeklyAverage *2;
+                      }
+                        else{ //if inStock > weekly average or candy is not in array, return zero.
+                        result[inventory[i].candy] = 0;
+                        }
+                      }
+                      return result; //result will be object with candy in key and order in value
+                    }
         
        
        
