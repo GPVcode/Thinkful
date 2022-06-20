@@ -584,5 +584,25 @@ global.handleInput = handleInput;
         }
         return price; // if outside of the loop, return price as nothing was accumulated into our variable and will come back undefined.
       }
-       
+                    
+ // example: Filter by Price
+       function priceFilter(items,number){ //write a function that takes in array items and number for parameters
+         let result = []; //accumulator as an array to return a list of values that meet conditional requirement
+         for(i=0; i<items.length; i++){ // loop through our list
+           if(items[i].price < number){ // conditional to find item values
+             results.push(items[i]) // push our resulkts to our array accumulator
+           }
+         }
+         return result;
+       }
+ // example: return number of answers in whcih isCorrect equals true
+         function countCorrectAnswer(answers){
+           let score = 0;
+           for(i=0, i<answers.length; i++){
+             if(answers[i].isCorrect === true){
+               score++;
+             }
+            }
+           return score;
+         }
        
