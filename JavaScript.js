@@ -560,6 +560,19 @@ global.handleInput = handleInput;
                       }
                       return result; //result will be object with candy in key and order in value
                     }
+                    
+// example: This is how to get the most expesive item in an array.
+     function mostExpensiveItemName(items){
+       let mostExpensive = "";
+       let name;
+       for(let i=0; i < items.length; i++){
+         if(items[i].price > mostExpensive){
+           mostExpensive = items[i].price;
+           name = items[i].name;
+         }
+       }
+       return name;
+     }
         
        
        
