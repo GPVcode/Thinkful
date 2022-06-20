@@ -582,7 +582,7 @@ global.handleInput = handleInput;
             return items[i].price; // if item matches input, return the value it array item's key named "price
           }
         }
-        return price; // if outside of the loop, return price as it will come back undefined.
+        return price; // if outside of the loop, return price as nothing was accumulated into our variable and will come back undefined.
       }
        
        
