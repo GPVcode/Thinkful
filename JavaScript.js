@@ -608,11 +608,23 @@ global.handleInput = handleInput;
   // example: write a finction to find student's answer to question, if no value, return undefined.
           function findAnswers(answers){
             let none; //create space to return our undefined answer if value is unavailablke in our loop.
-          for(i=0; i<answers.length; i++){
-            if (answers[i].question === questionToMatch){
-            question = answers[i];
-            return question;
+          for(i=0; i<answers.length; i++){ //Loop through
+            if (answers[i].question === questionToMatch){ // 
+            questionAnswer = answers[i]; // if condittion is true, let value  equal questionAnswer variable
+            return questionAnswer; // return student's answer to question.
             }
            }
             return none; // return none if array lacks values we are ooking for
           }
+                    
+   // example: check whther student response contains the snippet of the text - checkForPlagiarism exercise
+                    function checkForPlagiarism(answers, snippet){ // function with 2 parameters
+                    for(i=0; i<answers.length; i++){ // loop throough our array
+                      if(answers[i].isEssayQuestion === true){ //if values in isEssayQuestion is true
+                        if(answers[i].response.includes(snippet)){ // and if the response in index value includes our snippet
+                        return true; // return true
+                        }
+                      }
+                    }
+                      return false; //return false if loop ends due to failure of conditionals.
+                    }
