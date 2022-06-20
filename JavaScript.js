@@ -605,4 +605,14 @@ global.handleInput = handleInput;
             }
            return score;
          }
-       
+  // example: write a finction to find student's answer to question, if no value, return undefined.
+          function findAnswers(answers){
+            let none; //create space to return our undefined answer if value is unavailablke in our loop.
+          for(i=0; i<answers.length; i++){
+            if (answers[i].question === questionToMatch){
+            question = answers[i];
+            return question;
+            }
+           }
+            return none; // return none if array lacks values we are ooking for
+          }
