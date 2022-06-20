@@ -574,6 +574,15 @@ global.handleInput = handleInput;
        return name;
      }
         
-       
+ // example: Find the price of a single item lookup                
+      function priceLookup(items, name){ // funciton with 2 parameters from an array of items and item name as a string
+        let price;
+        for(i=0; i<items.length; i++){ // loop through the array
+          if(items[i].itemName===name){ // conditional to see if the input is in our array
+            return items[i].price; // if item matches input, return the value it array item's key named "price
+          }
+        }
+        return price; // if outside of the loop, return price as it will come back undefined.
+      }
        
        
