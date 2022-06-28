@@ -1,0 +1,4 @@
+These are my notes in Node. Should have made this file earlier to be honest.
+
+6/28/22:
+  By default, if you require a file that doesnt have a module.exports statement, you will receive an empty object
