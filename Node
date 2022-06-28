@@ -4,3 +4,6 @@ These are my notes in Node. Should have made this file earlier to be honest.
   By default, if you require a file that doesnt have a module.exports statement, you will receive an empty object.
   I am now learning the .json and how to create and use it to run scripts from the command line with npm. 
     - Learning this whill increase your efficiency as a web developer and prepare you for installing additional packages from the web.
+
+
+I am now learning about JavaScript packages. By the end of the lesson, I will be able to install packages from the web into your local Javascript project.
