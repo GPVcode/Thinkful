@@ -636,7 +636,7 @@ global.handleInput = handleInput;
                       
                       return first.toUpperCase() + rest.toLowerCase();
                     }
-                    //First we set the first cariable to equal only the first character. substr(0,1) means that the substring will begin on index 0 and only include 1 character
+                    //First we set the first Variable to equal only the first character. substr(0,1) means that the substring will begin on index 0 and only include 1 character
                     //Second, we set rest variable to equal every character starting from the first index. If we do not include a second argument, like in substr(1) the substring will consist of every character following the given index which is 1 in this case
                     //Finally, we join two string together using toUppercase() and toLowerCase().
 
