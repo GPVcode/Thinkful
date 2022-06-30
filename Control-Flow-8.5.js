@@ -31,5 +31,12 @@ undefined
 ... if(product.onSale) price = price * 0.9;
 ... return price;
 ... }
-undefined
 //NOTE: Use line consolidation techniques like this in your own code if the content inside the block is very short. Otherwise, it will be too difficult to read.
+
+  
+// The conditonal operator
+// (conditional expression) ? (expression if true) : (expression if false)
+
+> function getPrice(product){
+... return product.onSale ? product.priceInCents * 0.9 : product.priceInCents; // if product.onSale is truthy : if product.onSale is falsy
+... }
