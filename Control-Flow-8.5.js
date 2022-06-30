@@ -32,4 +32,4 @@ undefined
 ... return price;
 ... }
 undefined
->
+//NOTE: Use line consolidation techniques like this in your own code if the content inside the block is very short. Otherwise, it will be too difficult to read.
