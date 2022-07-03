@@ -87,4 +87,24 @@ function createSalesProduct(product, salesTax) {
     joinSizes,
   };
   
-  
+  //Using spread operators in function calls
+  Math.min(45,23,76,1,2,-4)
+  //-4
+  const temperatures =[76,72,68,79,54,65];
+  Math.min(temperatures);
+  //NaN
+  Math.min(...temperatures);
+  54
+  Math.min(76,72);
+  72
+
+  //using spread operators in arrays
+  const parents =["Lorie", "Steve"];
+  const kids = ["Jake", "Annie", "Jess"];
+  const dogs = [ "Olie", "Cosmo"];
+  const fullFamily = [parents, kids] // [Array(2), Array(3)]
+  const fullFamily2 = [...parents, ...kids] //correct
+// ["Lorie", "Steve, "Jake", "Annie", "Jess"]
+  const fullFamily3 = [...parent, ...kids, "ME!", ...dogs, "Unnamed Pet Turtle"]
+  return fullFamily3;
+  // [""Lorie", "Steve", "Jake", "Annie", "Jess", "ME!", "Olie", "Cosmo", "Unnamed Pet Turtle"]
