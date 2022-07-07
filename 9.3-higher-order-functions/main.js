@@ -16,8 +16,8 @@ let parks = [
   
   /** SECTION 2: USING logPark() **/
   
- const logPark = (park) => console.log(park.name);
- for (let i = 0; i < parks.length; i++) {
+ const logPark = (park) => console.log(park.name); //Arrow function (new function syntax)
+ for (let i = 0; i < parks.length; i++) { //for loop
     logPark(parks[i]);
 }
   
