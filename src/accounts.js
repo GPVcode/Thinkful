@@ -25,9 +25,10 @@ const getTotalNumberOfBorrows = (account, books) => {
 
 //return an array of book objects representing all books currently checked out by given account
 function getBooksPossessedByAccount(account, books, authors) {
-  let result = books.filter((book) => { //find the books with matching id and returned is false
+  let result = books.filter((book) => { //filter the books with matching id and returned is false -- books that are out
   return book.borrows.some((borrow) => borrow.id === account.id && !borrow.returned);
   });
+  
   //iterate over the result using map function and find author with result book id
   return result.map((book) => {
     const author = authors.find((author) => author.id === book.authorId);
