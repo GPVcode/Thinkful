@@ -1,0 +1,16 @@
+async function fullSession(question) {
+  // In the try block we are calling async functions and logging their responses to the console.
+  try{
+  // First we called welcome() function, then we logged its response
+  let response = await welcome();
+    console.log(response);
+    //Then we called getFortune() function, but we don't need to log because we are already have console.log() statements inside getFortune() function
+    let fortune = await getFortune(question);
+    //Then we called goodbye() function, and we logged its response
+    let departureMessage = await goodbye();
+    console.log(departureMessage);
+  }
+    catch(err) {
+      console.log(`There was an error: ${err}`);
+    };
+}
